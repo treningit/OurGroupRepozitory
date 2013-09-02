@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].Photo
+(
+	[IDPhoto] INT NOT NULL PRIMARY KEY, 
+    [Url] NVARCHAR(MAX) NULL, 
+    [Alt] NVARCHAR(MAX) NULL 
+)
