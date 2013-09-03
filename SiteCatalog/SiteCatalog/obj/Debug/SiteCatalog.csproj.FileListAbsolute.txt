@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\bin\SiteCatalog.dll
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\bin\SiteCatalog.pdb
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\bin\Antlr3.Runtime.dll
@@ -32,3 +33,39 @@ C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\bin\ru\M
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.csprojResolveAssemblyReference.cache
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.dll
 C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.pdb
+=======
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\SiteCatalog.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\SiteCatalog.pdb
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Antlr3.Runtime.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\AspNet.ScriptManager.jQuery.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.AspNet.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.Core.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OAuth.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OpenId.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\EntityFramework.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Microsoft.AspNet.Membership.OpenAuth.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Microsoft.ScriptManager.MSAjax.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Microsoft.ScriptManager.WebForms.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\Microsoft.Web.Infrastructure.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\System.Web.Optimization.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\System.Web.Providers.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\WebGrease.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\EntityFramework.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.Core.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OAuth.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OpenId.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\DotNetOpenAuth.AspNet.xml
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\ru\EntityFramework.resources.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\ru\System.Web.Optimization.resources.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\ru\System.Web.Providers.resources.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\bin\ru\Microsoft.AspNet.Membership.OpenAuth.resources.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.csprojResolveAssemblyReference.cache
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.dll
+E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.pdb
+>>>>>>> 99dff4c2968f6bd1f816f737aacbe19c4bc36551
