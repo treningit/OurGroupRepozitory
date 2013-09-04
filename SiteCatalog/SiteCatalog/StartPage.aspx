@@ -21,82 +21,69 @@
     
     </div>
         <asp:ListBox ID="ListBox1" runat="server" AutoPostBack="True" DataSourceID="SqlDataSource3" DataTextField="CategoryName" DataValueField="CategoryName" Height="670px"></asp:ListBox>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString2 %>" SelectCommand="SELECT [CategoryName] FROM [Category]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" SelectCommand="SELECT [IDProduct] FROM [Product] WHERE ([FullDiscription] LIKE '%' + @FullDiscription + '%')">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="ListView1" Name="FullDiscription" PropertyName="SelectedValue" Type="String" />
+            </SelectParameters>
+        </asp:SqlDataSource>
         <div style="margin-left: 40px">
-            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource1">
+            <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlDataSource3" DataKeyNames="IDProduct">
                 <AlternatingItemTemplate>
-                    <tr style="">
-                        <td>
-                            <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Eval("ProductName") %>' />
-                        </td>
-                    </tr>
+                    <span style="">IDProduct:
+                    <asp:Label ID="IDProductLabel" runat="server" Text='<%# Eval("IDProduct") %>' />
+                    <br />
+                    <br />
+                    </span>
                 </AlternatingItemTemplate>
                 <EditItemTemplate>
-                    <tr style="">
-                        <td>
-                            <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Обновить" />
-                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Отмена" />
-                        </td>
-                        <td>
-                            <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
-                        </td>
-                    </tr>
+                    <span style="">IDProduct:
+                    <asp:Label ID="IDProductLabel1" runat="server" Text='<%# Eval("IDProduct") %>' />
+                    <br />
+                    <asp:Button ID="UpdateButton" runat="server" CommandName="Update" Text="Update" />
+                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Cancel" />
+                    <br />
+                    <br />
+                    </span>
                 </EditItemTemplate>
                 <EmptyDataTemplate>
-                    <table runat="server" style="">
-                        <tr>
-                            <td>Нет данных.</td>
-                        </tr>
-                    </table>
+                    <span>No data was returned.</span>
                 </EmptyDataTemplate>
                 <InsertItemTemplate>
-                    <tr style="">
-                        <td>
-                            <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Вставить" />
-                            <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Очистить" />
-                        </td>
-                        <td>
-                            <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
-                        </td>
-                    </tr>
+                    <span style="">IDProduct:
+                    <asp:TextBox ID="IDProductTextBox" runat="server" Text='<%# Bind("IDProduct") %>' />
+                    <br />
+                    <asp:Button ID="InsertButton" runat="server" CommandName="Insert" Text="Insert" />
+                    <asp:Button ID="CancelButton" runat="server" CommandName="Cancel" Text="Clear" />
+                    <br />
+                    <br />
+                    </span>
                 </InsertItemTemplate>
                 <ItemTemplate>
-                    <tr style="">
-                        <td>
-                            <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Eval("ProductName") %>' />
-                        </td>
-                    </tr>
+                    <span style="">IDProduct:
+                    <asp:Label ID="IDProductLabel" runat="server" Text='<%# Eval("IDProduct") %>' />
+                    <br />
+                    <br />
+                    </span>
                 </ItemTemplate>
                 <LayoutTemplate>
-                    <table runat="server">
-                        <tr runat="server">
-                            <td runat="server">
-                                <table id="itemPlaceholderContainer" runat="server" border="0" style="">
-                                    <tr runat="server" style="">
-                                        <th runat="server">ProductName</th>
-                                    </tr>
-                                    <tr id="itemPlaceholder" runat="server">
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr runat="server">
-                            <td runat="server" style=""></td>
-                        </tr>
-                    </table>
+                    <div id="itemPlaceholderContainer" runat="server" style="">
+                        <span runat="server" id="itemPlaceholder" />
+                    </div>
+                    <div style="">
+                    </div>
                 </LayoutTemplate>
                 <SelectedItemTemplate>
-                    <tr style="">
-                        <td>
-                            <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Eval("ProductName") %>' />
-                        </td>
-                    </tr>
+                    <span style="">IDProduct:
+                    <asp:Label ID="IDProductLabel" runat="server" Text='<%# Eval("IDProduct") %>' />
+                    <br />
+                    <br />
+                    </span>
                 </SelectedItemTemplate>
             </asp:ListView>
         </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString2 %>" SelectCommand="SELECT [ProductName] FROM [Product] WHERE ([FullDiscription] LIKE '%' + @FullDiscription + '%')">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" SelectCommand="SELECT [IDProduct] FROM [Product] WHERE ([FullDiscription] LIKE '%' + @FullDiscription + '%')">
             <SelectParameters>
-                <asp:ControlParameter ControlID="TextBox1" DefaultValue="404" Name="FullDiscription" PropertyName="Text" Type="String" />
+                <asp:ControlParameter ControlID="ListView1" Name="FullDiscription" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
 &nbsp;&nbsp;&nbsp;

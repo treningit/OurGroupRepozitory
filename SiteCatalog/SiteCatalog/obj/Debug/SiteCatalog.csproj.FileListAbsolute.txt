@@ -69,3 +69,6 @@ E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\S
 E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.dll
 E:\синхронизация проэкта\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.pdb
 >>>>>>> 99dff4c2968f6bd1f816f737aacbe19c4bc36551
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.dll
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\SiteCatalog\SiteCatalog\obj\Debug\SiteCatalog.pdb

@@ -13,7 +13,7 @@ namespace SiteCatalog
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            string strCon = "Data Source=G-17\\SQLEXPRESS;Initial Catalog=SiteCatalogBD;Integrated Security=True;Connect Timeout=15;Encrypt=False;TrustServerCertificate = False;";
+            string strCon = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\Users\HP\Desktop\GiT\OurGroupRepozitory\BD\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30";
             
             if (Page.IsPostBack)
             {
