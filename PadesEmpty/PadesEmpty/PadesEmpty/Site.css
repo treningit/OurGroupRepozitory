@@ -1,0 +1,207 @@
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .8em;
+    height: 100px;
+
+
+}
+
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+    h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }
+
+
+#SiteLogo { font-size:20px;
+        font-weight:900;
+        
+}
+
+#SiteNav {
+    float: left;
+    background-color: rgb(236,236,236);
+    margin-top: 5px;
+    width:98%;
+    height: 300px;
+}
+
+#SiteSubscribe {
+    float: left;
+    background-color: rgb(236,236,236);
+    margin-top: 5px;
+    width:98%;
+    height: 50px;
+}
+
+#SiteSubscribe, #SiteNav {
+    background-color: rgba(100, 100, 100, 0.5);
+                    
+}
+
+#SitePage {    
+    height: 500px;
+    box-shadow: 0 0 5px black;
+}
+
+#SiteContent, #SiteMenu {
+    float:left;
+    height: 100%;
+}
+
+#SiteHeader { 
+    background-color: rgb(70,70,70);
+    color: rgb(204,204,204);
+    height: 50px;
+}
+
+#SiteMenu { 
+    width:20%;
+    min-width: 40px;
+    background-color: rgb(223,223,223);
+}
+
+
+
+
+
+
+#SiteContent { 
+    width:75%;
+    min-width: 200px;
+    box-shadow: 0 0 5px grey;
+    
+    }
+
+#SiteSection { 
+    margin: 30px;
+    height:80%;
+}
+
+#Login { width: 14%;
+         
+}
+
+#LoginView1 { margin: 0 30px 0 30px;
+              color: red;
+}
+
+#Login {
+    width: 3%; 
+    height: 35px;
+    float: right;
+    background-color: #cecece;
+        -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+        border-radius:  100px 0 0 100px;
+    margin-top:200px;
+    font-size: 8px;
+    border: groove 2px white;
+    color: white;
+}
+
+
+
+     /* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+    width: 90px;
+}
+
+.site-title a, .site-title a:hover, .site-title a:active {
+    background: none;
+    color: #c8c8c8;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+/* search
+--------------------------------------------------------- */
+
+#SiteSearch, #SiteInpSearch {
+    
+    font-size: .85em;
+    text-align: right;
+    width: 100px;
+    height: 55%;
+    float: right;
+    color: grey;
+    margin: 3px;
+}
+
+#SiteInpSearch {
+}
+
