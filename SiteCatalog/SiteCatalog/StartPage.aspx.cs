@@ -11,7 +11,7 @@ namespace SiteCatalog
 
         }
 
-        protected void Button4_Click(object sender, EventArgs e)
+        /*protected void Button4_Click(object sender, EventArgs e)
         {
             string strCon = "Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\Users\HP\Desktop\GiT\OurGroupRepozitory\BD\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30";
             
@@ -19,7 +19,7 @@ namespace SiteCatalog
             {
                 TextBox1.Text =  (Select(strCon, TextBox1.Text)).ToString();
             }
-        }
+        }*/
 
         protected int Select(string myConnection, string search)
         {
