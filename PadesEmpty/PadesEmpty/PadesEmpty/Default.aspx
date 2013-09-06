@@ -52,11 +52,25 @@
 
             <div id="Section">
                 <p id="TextFromButton" runat="server">Раздел</p>
-                <hr style="background-color: #FFFFFF; height: 3px;" />
+                <hr style="background-color: #FFFFFF; height: 3px;" /> 
                 <p>
                 <asp:Button ID="Button1" runat="server" Text="Добавить товар" OnClick="Button1_Click" Visible="False" />
                 </p>
-                <asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDProduct" DataSourceID="SqlDataSource2" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" PageSize="5" Visible="False" Width="708px">
+              
+                <asp:Panel Panel ID="Add1" runat ="server" Visible="False">
+                <asp:Label ID="Label1" runat="server" Text="ProductName"></asp:Label>
+                    &nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                &nbsp;<asp:Label ID="Label2" runat="server" Text="Discription"></asp:Label>
+                <asp:TextBox ID="TextBox2" runat="server" TextMode="MultiLine"></asp:TextBox>
+                <asp:Label ID="Label3" runat="server" Text="FullDiscription"></asp:Label>
+                <asp:TextBox ID="TextBox3" runat="server" TextMode="MultiLine"></asp:TextBox>
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Добавить" />
+                    &nbsp;</asp:Panel>
+                  <asp:Panel Panel ID="PanelProduct" runat ="server" Visible="False"> 
+&nbsp;<asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDProduct" DataSourceID="SqlDataSource2" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" PageSize="5" Visible="False" Width="708px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -75,6 +89,7 @@
                     <SortedDescendingCellStyle BackColor="#D4DFE1" />
                     <SortedDescendingHeaderStyle BackColor="#15524A" />
                 </asp:GridView>
+
                 <br />
                 <br />
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" DeleteCommand="DELETE FROM [Comments] WHERE [IDProduct] = @IDProduct
@@ -98,11 +113,49 @@ DELETE FROM [Product] WHERE [IDProduct] = @IDProduct
                         <asp:Parameter Name="IDPhoto" Type="Int32" />
                         <asp:Parameter Name="IDProduct" Type="Int32" />
                     </UpdateParameters>
-                </asp:SqlDataSource>
+                </asp:SqlDataSource></asp:Panel>
+<asp:GridView ID="GridView3" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDCategory" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" AllowPaging="True" AllowSorting="True" PageSize="5" Visible="False" Width="705px">
+           <AlternatingRowStyle BackColor="White" />
+           <Columns>
+               <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+               <asp:BoundField DataField="CategoryName" HeaderText="CategoryName" SortExpression="CategoryName" />
+           </Columns>
+           <EditRowStyle BackColor="#7C6F57" />
+           <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+           <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+           <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
+           <RowStyle BackColor="#E3EAEB" />
+           <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
+           <SortedAscendingCellStyle BackColor="#F8FAFA" />
+           <SortedAscendingHeaderStyle BackColor="#246B61" />
+           <SortedDescendingCellStyle BackColor="#D4DFE1" />
+           <SortedDescendingHeaderStyle BackColor="#15524A" />
+       </asp:GridView>
             </div>
+            
             
 
         </div>
+       
+       
+       
+       
+       <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" DeleteCommand="DELETE FROM [ProductCategory] WHERE [IDCategory] = @IDCategory
+DELETE FROM [Category] WHERE [IDCategory] = @IDCategory" InsertCommand="INSERT INTO [Category] ([IDCategory], [CategoryName]) VALUES (@IDCategory, @CategoryName)" ProviderName="<%$ ConnectionStrings:SiteCatalogConnectionString.ProviderName %>" SelectCommand="SELECT [IDCategory], [CategoryName] FROM [Category]" UpdateCommand="UPDATE [Category] SET [CategoryName] = @CategoryName WHERE [IDCategory] = @IDCategory">
+           <DeleteParameters>
+               <asp:Parameter Name="IDCategory" Type="Int32" />
+           </DeleteParameters>
+           <InsertParameters>
+               <asp:Parameter Name="IDCategory" Type="Int32" />
+               <asp:Parameter Name="CategoryName" Type="String" />
+           </InsertParameters>
+           <UpdateParameters>
+               <asp:Parameter Name="CategoryName" Type="String" />
+               <asp:Parameter Name="IDCategory" Type="Int32" />
+           </UpdateParameters>
+       </asp:SqlDataSource>
+       
+       
        
     </div>
 

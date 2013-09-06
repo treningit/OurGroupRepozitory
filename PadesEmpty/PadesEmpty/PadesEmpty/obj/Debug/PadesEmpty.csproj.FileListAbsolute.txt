@@ -8,3 +8,8 @@ C:\Users\HP\Desktop\PadesEmpty\PadesEmpty\PadesEmpty\bin\PadesEmpty.pdb
 C:\Users\HP\Desktop\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.csprojResolveAssemblyReference.cache
 C:\Users\HP\Desktop\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.dll
 C:\Users\HP\Desktop\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.pdb
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\PadesEmpty\PadesEmpty\PadesEmpty\bin\PadesEmpty.dll
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\PadesEmpty\PadesEmpty\PadesEmpty\bin\PadesEmpty.pdb
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.csprojResolveAssemblyReference.cache
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.dll
+C:\Users\HP\Desktop\GiT\OurGroupRepozitory\PadesEmpty\PadesEmpty\PadesEmpty\obj\Debug\PadesEmpty.pdb
