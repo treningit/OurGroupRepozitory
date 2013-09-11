@@ -1,9 +1,9 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PadesEmpty.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="seo.aspx.cs" Inherits="PadesEmpty.Default" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
+<head id="Head111" runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 
@@ -14,13 +14,13 @@
 
 
 <body>
-<form id="form1" runat="server">
+<form id="form11334" runat="server">
 
 
 
    <div id="Header">
        
-       <asp:Label ID="Logo" runat="server" Text="Pades"></asp:Label>
+       <asp:Label ID="Logo233" runat="server" Text="Pades"></asp:Label>
    </div>
    <div id="Page">
        <div id="Menu" >
@@ -30,18 +30,18 @@
                <span id="ViewLink"><a href="#" id="LinkSite" style="font-family: Verdana">View Site</a></span>
            </div>
            <div id="SetGeneral">
-               <asp:LinkButton ID="LinkButton1" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click">Товары</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton116" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click">Товары</asp:LinkButton>
                <br />
-               <asp:LinkButton ID="LinkButton2" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click">Категории</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton216" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click">Категории</asp:LinkButton>
                <br />
-               <asp:LinkButton ID="LinkButton3" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px"  PostBackUrl="~/post.aspx">Страницы</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton316" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px"  PostBackUrl="~/post.aspx">Страницы</asp:LinkButton>
            </div>            
            <div id="SetSite">
-               <asp:LinkButton ID="LinkButton4" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click" PostBackUrl="~/vneshni-vid.aspx">Внешний вид</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton416" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" PostBackUrl="~/vneshni-vid.aspx">Внешний вид</asp:LinkButton>
                <br />
-               <asp:LinkButton ID="LinkButton5" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click" PostBackUrl="~/seo.aspx">Seo</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton516" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click" PostBackUrl="~/seo.aspx">Seo</asp:LinkButton>
                <br />
-               <asp:LinkButton ID="LinkButton6" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click" PostBackUrl="~/info.aspx">Информация</asp:LinkButton>
+               <asp:LinkButton ID="LinkButton661" runat="server" CssClass="LinkBtn" Width="96%" Font-Bold="True" Font-Italic="False" Font-Names="Verdana" ForeColor="#E0E0E0" Font-Size="12px" OnClick="LinkButton1_Click" PostBackUrl="~/info.aspx">Информация</asp:LinkButton>
            </div> 
 
            <br />
@@ -51,7 +51,7 @@
             
 
             <div id="Section">
-                <p id="TextFromButton" runat="server">Раздел</p>
+                <p id="TextFromButton888" runat="server">Раздел</p>
             </div>
             
             

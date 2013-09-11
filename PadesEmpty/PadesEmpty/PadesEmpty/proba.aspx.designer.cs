@@ -10,96 +10,96 @@
 namespace PadesEmpty {
     
     
-    public partial class Default {
+    public partial class proba {
         
         /// <summary>
-        /// Head111 элемент управления.
+        /// Head1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlHead Head111;
+        protected global::System.Web.UI.HtmlControls.HtmlHead Head1;
         
         /// <summary>
-        /// form11334 элемент управления.
+        /// form18 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form11334;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form18;
         
         /// <summary>
-        /// Logo233 элемент управления.
+        /// Logo88 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Logo233;
+        protected global::System.Web.UI.WebControls.Label Logo88;
         
         /// <summary>
-        /// LinkButton116 элемент управления.
+        /// LinkButton388 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton116;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton388;
         
         /// <summary>
-        /// LinkButton216 элемент управления.
+        /// LinkButton488 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton216;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton488;
         
         /// <summary>
-        /// LinkButton316 элемент управления.
+        /// LinkButton588 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton316;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton588;
         
         /// <summary>
-        /// LinkButton416 элемент управления.
+        /// LinkButton688 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton416;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton688;
         
         /// <summary>
-        /// LinkButton516 элемент управления.
+        /// TextFromButton1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton516;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextFromButton1;
         
         /// <summary>
-        /// LinkButton661 элемент управления.
+        /// TextBox18 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton661;
+        protected global::System.Web.UI.WebControls.TextBox TextBox18;
         
         /// <summary>
-        /// TextFromButton888 элемент управления.
+        /// Button133 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl TextFromButton888;
+        protected global::System.Web.UI.WebControls.Button Button133;
     }
 }

@@ -12,7 +12,6 @@
 </head>
 
 
-
 <body>
 <form id="form1" runat="server">
 
@@ -25,7 +24,7 @@
    <div id="Page">
        <div id="Menu" >
             
-
+            
            <div id="ViewSite" style="border-bottom-style: ridge; border-width: 2px; border-color: #FFFFFF">
                <span id="ViewLink"><a href="#" id="LinkSite" style="font-family: Verdana">View Site</a></span>
            </div>
@@ -48,7 +47,7 @@
 
         </div>
         <div id="Content" >
-            
+           
 
             <div id="Section">
                 <p id="TextFromButton" runat="server">Раздел</p>

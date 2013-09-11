@@ -29,6 +29,7 @@
                <br />
            </div>            
            <div id="SiteSubscribe">
+
                <br />
                <br />
            </div> 
@@ -39,8 +40,11 @@
         <div id="SiteContent" >
             
 
+
             <div id="SiteSection">
                 <p>Раздел</p>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
             </div>
             
 

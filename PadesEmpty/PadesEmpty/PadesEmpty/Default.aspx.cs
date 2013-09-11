@@ -10,7 +10,11 @@ namespace PadesEmpty
 {
     public partial class Default : System.Web.UI.Page
     {
-        
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
@@ -18,6 +22,7 @@ namespace PadesEmpty
             switch (((LinkButton) sender).Text)
             {
                 case "Товары":
+              
                     Add1.Visible = false;
                     PanelProduct.Visible = true;
                     Button1.Visible = true;
@@ -68,9 +73,9 @@ namespace PadesEmpty
                 TextBox2.Visible = false;
                 TextBox3.Visible = false;
             }
-            
+             
         }
-
+           
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -90,5 +95,12 @@ namespace PadesEmpty
             myCon.Close();
             return (int)al[0]; */
         }
+
+        protected void Button133_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        
     }
 }
