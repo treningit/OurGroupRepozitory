@@ -57,7 +57,7 @@
                 <asp:Button ID="Button1" runat="server" Text="Добавить товар" OnClick="Button1_Click" Visible="False" />
                 </p>
               
-                <asp:Panel Panel ID="Add1" runat ="server" Visible="False">
+                <asp:Panel ID="Add1" runat ="server" Visible="False">
                 <asp:Label ID="Label1" runat="server" Text="ProductName"></asp:Label>
                     &nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 &nbsp;<asp:Label ID="Label2" runat="server" Text="Discription"></asp:Label>
