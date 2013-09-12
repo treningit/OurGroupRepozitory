@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -63,6 +64,7 @@ namespace PadesEmpty
                 TextBox2.Visible = true;
                 TextBox3.Visible = true;
             }
+<<<<<<< HEAD
             if (Button1.Text == "Добавить категорию")
             {
                 GridView3.Visible = false;
@@ -73,6 +75,15 @@ namespace PadesEmpty
                 TextBox3.Visible = false;
             }
             
+=======
+            if (Button1.Text != "Добавить категорию") return;
+            Button1.Visible = false;
+            GridView3.Visible = false;
+            Label2.Visible = false;
+            Label3.Visible = false;
+            TextBox2.Visible = false;
+            TextBox3.Visible = false;
+>>>>>>> e4d920e115264c0c468cd397a5b62ccdbe7279b6
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
@@ -82,6 +93,7 @@ namespace PadesEmpty
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             String strCon = SqlDataSource1.ConnectionString;
             SqlConnection myCon = new SqlConnection(strCon);
             SqlCommand myCom = new SqlCommand("INSERT INTO Category (CategoryName) VALUES ('" + Label1.Text + "')", myCon);
@@ -90,6 +102,31 @@ namespace PadesEmpty
             myCon.Close();
             Label4.Visible = true;
             Label4.Text = "Ура!";
+=======
+            string myConnection;
+            SqlConnection myCon;
+            SqlCommand myCom;
+            switch (Button1.Text)
+            {
+                case "Добавить продукт":
+                    myConnection = SqlDataSource1.ConnectionString;
+                    myCon = new SqlConnection(myConnection);
+                    myCom = new SqlCommand("INSERT INTO Product (ProductName,Discription,FullDiscription) VALUES ('" + Label1.Text + "','" + Label2.Text + "','" + Label3.Text + "')", myCon);
+                    myCom.Connection.Open();
+                    myCom.ExecuteNonQuery();
+                    myCon.Close();
+                    break;
+                case "Добавить категорию":
+                    myConnection = SqlDataSource2.ConnectionString;
+                    myCon = new SqlConnection(myConnection);
+                    myCom = new SqlCommand("INSERT INTO Category (CategoryName) VALUES ('" + Label1.Text + "')", myCon);
+                    myCom.Connection.Open();
+                    myCom.ExecuteNonQuery();
+                    myCon.Close();
+                    break;
+            }
+            
+>>>>>>> e4d920e115264c0c468cd397a5b62ccdbe7279b6
         }
     }
 }
