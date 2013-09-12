@@ -64,7 +64,9 @@
     <Content Include="Site.css" />
     <Content Include="Style.css" />
     <Content Include="vneshni-vid.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>

@@ -57,7 +57,7 @@
                 <asp:Button ID="Button1" runat="server" Text="Добавить товар" OnClick="Button1_Click" Visible="False" />
                 </p>
               
-                <asp:Panel Panel ID="Add1" runat ="server" Visible="False">
+                <asp:Panel ID="Add1" runat ="server" Visible="False">
                 <asp:Label ID="Label1" runat="server" Text="ProductName"></asp:Label>
                     &nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 &nbsp;<asp:Label ID="Label2" runat="server" Text="Discription"></asp:Label>
@@ -68,9 +68,10 @@
                     <br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Добавить" />
-                    &nbsp;</asp:Panel>
-                  <asp:Panel Panel ID="PanelProduct" runat ="server" Visible="False"> 
-&nbsp;<asp:GridView ID="GridView2" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDProduct" DataSourceID="SqlDataSource2" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" PageSize="5" Visible="False" Width="708px">
+                    &nbsp;<asp:Label ID="Label4" runat="server" Text="Label" Visible="False"></asp:Label>
+                </asp:Panel>
+                  <asp:Panel ID="PanelProduct" runat ="server" Visible="False"> 
+&nbsp;<asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IDProduct" DataSourceID="SqlDataSource2" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" PageSize="5" Visible="False" Width="708px">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
@@ -92,10 +93,10 @@
 
                 <br />
                 <br />
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" DeleteCommand="DELETE FROM [Comments] WHERE [IDProduct] = @IDProduct
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString2 %>" DeleteCommand="DELETE FROM [Comments] WHERE [IDProduct] = @IDProduct
 DELETE FROM [ProductCategory] WHERE [IDProduct] = @IDProduct
 DELETE FROM [Product] WHERE [IDProduct] = @IDProduct
-" InsertCommand="INSERT INTO [Product] ([IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto]) VALUES (@IDProduct, @ProductName, @Discription, @FullDiscription, @IDPhoto)" ProviderName="<%$ ConnectionStrings:SiteCatalogConnectionString.ProviderName %>" SelectCommand="SELECT [IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto] FROM [Product]" UpdateCommand="UPDATE [Product] SET [ProductName] = @ProductName, [Discription] = @Discription, [FullDiscription] = @FullDiscription, [IDPhoto] = @IDPhoto WHERE [IDProduct] = @IDProduct">
+" InsertCommand="INSERT INTO [Product] ([IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto]) VALUES (@IDProduct, @ProductName, @Discription, @FullDiscription, @IDPhoto)" SelectCommand="SELECT [IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto] FROM [Product]" UpdateCommand="UPDATE [Product] SET [ProductName] = @ProductName, [Discription] = @Discription, [FullDiscription] = @FullDiscription, [IDPhoto] = @IDPhoto WHERE [IDProduct] = @IDProduct">
                     <DeleteParameters>
                         <asp:Parameter Name="IDProduct" Type="Int32" />
                     </DeleteParameters>
@@ -140,8 +141,8 @@ DELETE FROM [Product] WHERE [IDProduct] = @IDProduct
        
        
        
-       <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" DeleteCommand="DELETE FROM [ProductCategory] WHERE [IDCategory] = @IDCategory
-DELETE FROM [Category] WHERE [IDCategory] = @IDCategory" InsertCommand="INSERT INTO [Category] ([IDCategory], [CategoryName]) VALUES (@IDCategory, @CategoryName)" ProviderName="<%$ ConnectionStrings:SiteCatalogConnectionString.ProviderName %>" SelectCommand="SELECT [IDCategory], [CategoryName] FROM [Category]" UpdateCommand="UPDATE [Category] SET [CategoryName] = @CategoryName WHERE [IDCategory] = @IDCategory">
+       <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Cryo\Desktop\GitHub\OurGroupRepozitory\BD\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [ProductCategory] WHERE [IDCategory] = @IDCategory
+DELETE FROM [Category] WHERE [IDCategory] = @IDCategory" InsertCommand="INSERT INTO [Category] ([IDCategory], [CategoryName]) VALUES (@IDCategory, @CategoryName)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [IDCategory], [CategoryName] FROM [Category]" UpdateCommand="UPDATE [Category] SET [CategoryName] = @CategoryName WHERE [IDCategory] = @IDCategory">
            <DeleteParameters>
                <asp:Parameter Name="IDCategory" Type="Int32" />
            </DeleteParameters>

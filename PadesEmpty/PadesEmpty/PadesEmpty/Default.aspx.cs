@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Web.Services.Description;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -53,6 +54,8 @@ namespace PadesEmpty
             Add1.Visible = true;
             if (Button1.Text == "Добавить продукт")
             {
+
+                Label1.Text = "ProductName";
                 Button1.Visible = false;
                 GridView2.Visible = false;
                 Label2.Visible = true;
@@ -63,6 +66,7 @@ namespace PadesEmpty
             if (Button1.Text == "Добавить категорию")
             {
                 GridView3.Visible = false;
+                Label1.Text = "CategoryName";
                 Label2.Visible = false;
                 Label3.Visible = false;
                 TextBox2.Visible = false;
@@ -78,17 +82,14 @@ namespace PadesEmpty
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-           /* SqlConnection myCon = new SqlConnection(myConnection);
-            SqlCommand myCom = new SqlCommand("SELECT IDProduct FROM Product WHERE FullDiscription LIKE '%" + search + "%' ", myCon);
+            String strCon = SqlDataSource1.ConnectionString;
+            SqlConnection myCon = new SqlConnection(strCon);
+            SqlCommand myCom = new SqlCommand("INSERT INTO Category (CategoryName) VALUES ('" + Label1.Text + "')", myCon);
             myCom.Connection.Open();
-            SqlDataReader reader = myCom.ExecuteReader();
-            ArrayList al = new ArrayList();
-            while (reader.Read())
-            {
-                al.Add(reader[0]);
-            }
+            myCom.ExecuteNonQuery();
             myCon.Close();
-            return (int)al[0]; */
+            Label4.Visible = true;
+            Label4.Text = "Ура!";
         }
     }
 }

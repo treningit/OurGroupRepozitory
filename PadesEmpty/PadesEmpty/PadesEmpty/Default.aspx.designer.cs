@@ -175,6 +175,15 @@ namespace PadesEmpty {
         protected global::System.Web.UI.WebControls.Button Button2;
         
         /// <summary>
+        /// Label4 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label4;
+        
+        /// <summary>
         /// PanelProduct элемент управления.
         /// </summary>
         /// <remarks>
