@@ -57,19 +57,27 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Category.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="post.aspx" />
-    <Content Include="seo.aspx" />
+    <Content Include="Inform.aspx" />
+    <Content Include="Products.aspx" />
+    <Content Include="Settings.aspx" />
     <Content Include="Site.aspx" />
     <Content Include="Site.css" />
     <Content Include="Style.css" />
-    <Content Include="vneshni-vid.aspx" />
+    <Content Include="Users.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -77,20 +85,27 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="post.aspx.cs">
-      <DependentUpon>post.aspx</DependentUpon>
+    <Compile Include="Inform.aspx.cs">
+      <DependentUpon>Inform.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="post.aspx.designer.cs">
-      <DependentUpon>post.aspx</DependentUpon>
+    <Compile Include="Inform.aspx.designer.cs">
+      <DependentUpon>Inform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="seo.aspx.cs">
-      <DependentUpon>seo.aspx</DependentUpon>
+    <Compile Include="Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="seo.aspx.designer.cs">
-      <DependentUpon>seo.aspx</DependentUpon>
+    <Compile Include="Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.aspx.cs">
       <DependentUpon>Site.aspx</DependentUpon>
@@ -99,19 +114,12 @@
     <Compile Include="Site.aspx.designer.cs">
       <DependentUpon>Site.aspx</DependentUpon>
     </Compile>
-    <Compile Include="vneshni-vid.aspx.cs">
-      <DependentUpon>vneshni-vid.aspx</DependentUpon>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="vneshni-vid.aspx.designer.cs">
-      <DependentUpon>vneshni-vid.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

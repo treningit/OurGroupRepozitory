@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PadesEmpty.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Site.aspx.cs" Inherits="PadesEmpty.Site" %>
 
 <!DOCTYPE html>
 
@@ -41,12 +41,34 @@
 
             <div id="SiteSection">
                 <p>Раздел</p>
+                
+                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                <br />
+                <br />
+                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <br />
+&nbsp;&nbsp;
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" SelectCommand="SELECT [UserName], [UserPassword] FROM [User] WHERE (([UserName] = @UserName) AND ([UserPassword] = @UserPassword))">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="TextBox1" Name="UserName" PropertyName="Text" Type="String" />
+                        <asp:ControlParameter ControlID="TextBox2" Name="UserPassword" PropertyName="Text" Type="String" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             </div>
             
 
         </div>
        <span id="Login" >&nbsp; Вход
        </span>
+      
+       
+      
     </div>
 
 
