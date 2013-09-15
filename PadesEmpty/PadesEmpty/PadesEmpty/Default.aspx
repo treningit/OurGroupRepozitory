@@ -12,19 +12,20 @@
 </head>
 
 
+
 <body>
 <form id="form1" runat="server">
 
 
 
    <div id="Header">
-       
+        
        <asp:Label ID="Logo" runat="server" Text="Pades"></asp:Label>
    </div>
    <div id="Page">
        <div id="Menu" >
             
-            
+
            <div id="ViewSite" style="border-bottom-style: ridge; border-width: 2px; border-color: #FFFFFF">
                <span id="ViewLink"><a href="#" id="LinkSite" style="font-family: Verdana">View Site</a></span>
            </div>
@@ -47,7 +48,7 @@
 
         </div>
         <div id="Content" >
-           
+            
 
             <div id="Section">
                 <p id="TextFromButton" runat="server">Раздел</p>
@@ -56,7 +57,7 @@
                 <asp:Button ID="Button1" runat="server" Text="Добавить товар" OnClick="Button1_Click" Visible="False" />
                 </p>
               
-                <asp:Panel Panel ID="Add1" runat ="server" Visible="False">
+                <asp:Panel ID="Add1" runat ="server" Visible="False">
                 <asp:Label ID="Label1" runat="server" Text="ProductName"></asp:Label>
                     &nbsp;<asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 &nbsp;<asp:Label ID="Label2" runat="server" Text="Discription"></asp:Label>

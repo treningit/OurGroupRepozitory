@@ -11,12 +11,14 @@ namespace PadesEmpty
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Site a = new Site();
+            
         }
 
         protected void Button133_Click(object sender, EventArgs e)
         {
             TextBox18.Text = "bbdjfks";
+            
         }
     }
 }

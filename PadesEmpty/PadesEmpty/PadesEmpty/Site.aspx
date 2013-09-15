@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="PadesEmpty.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Site.aspx.cs" Inherits="PadesEmpty.Site" %>
 
 <!DOCTYPE html>
 
@@ -8,6 +8,12 @@
     <title></title>
 
     <link  type="text/css" href="Site.css" rel="stylesheet"/>
+    
+    <style type="text/css">
+        .SiteFoot1 {
+            width: 86px;
+        }
+    </style>
     
 </head>
 
@@ -19,17 +25,37 @@
 
 
    <div id="SiteHeader">
+       <div id="SiteLogo">
+           <%--<input type="search" value="Search..." id="SiteSearch"/>--%>
+           <asp:TextBox ID="SiteSearch" runat="server" ></asp:TextBox>&nbsp;
+           <asp:Button ID="BtnSearch" runat="server" CssClass="BtnSearch" Height="27px" Width="27px" />
+       </div>
+       <div id="SiteNavigation">
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Map</a></li>
+        </ul>
+           
+       </div>
    </div>
    <div id="SitePage">
        <div id="SiteMenu" >
             
 
            <div id="SiteNav">
-               <br />
-               <br />
+               
+               <ul>
+                   <li><a href="#">Категория</a></li>
+                   <li><a href="#">Категория</a></li>
+                   <li><a href="#">Категория</a></li>
+                   <li><a href="#">Категория</a></li>
+                   <li><a href="#">Категория</a></li>
+                   <li><a href="#">Категория</a></li>
+               </ul>
            </div>            
-           <div id="SiteSubscribe">
-
+           <div id="SiteFollow">
                <br />
                <br />
            </div> 
@@ -40,20 +66,87 @@
         <div id="SiteContent" >
             
 
-
             <div id="SiteSection">
                 <p>Раздел</p>
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-
+                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2">
+                    <ItemTemplate>
+                        CompanyInfo:
+                        <asp:Label ID="CompanyInfoLabel" runat="server" Text='<%# Eval("CompanyInfo") %>' />
+                        <br />
+<br />
+                    </ItemTemplate>
+                </asp:DataList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:D:\GITHAB\BD\SITECATALOG.MDFConnectionString1 %>" SelectCommand="SELECT [CompanyInfo] FROM [Info]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             </div>
-            
+
+
 
         </div>
-       <span id="Login" >&nbsp; Вход
-       </span>
+       <%--<asp:Button ID="Login" runat="server" Height="37px" Text="Вход" Width="25px" />--%>
+       <div id="UserLogin">
+           <br />
+           <asp:Label ID="Enter" runat="server" Text="Вход"></asp:Label>
+           <br />
+           <br />
+           <asp:TextBox ID="UserName" runat="server">Логин</asp:TextBox>
+           <br />
+           <br />
+           <asp:TextBox ID="Password" runat="server" >Пароль</asp:TextBox>
+           <br />
+           <br />
+           <asp:Button ID="BtnLogin" runat="server" Text="Button" />
+       </div>
     </div>
 
+<div id="SiteFooter">
+    <div id="SiteFooterTop">
+        <div id="SiteFoot">
+        <div id="SiteFoot1">
+            <div class="SiteFoot1">
 
+                <asp:Button ID="BtnUp" runat="server" Height="208px" Text="Наверх" Width="82px" ForeColor="#444444" />
+
+            </div>
+            <div class="SiteFoot1">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Map</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="SiteFoot2">
+            <div>
+                <p>Ожидайте наш магазин <br />в социальных сетях:</p>
+
+            <img src="Image/tw.jpg"/>&nbsp; <a>Twitter</a><br />
+            <img src="Image/fb.jpg" />&nbsp; <a>Facebook</a><br />
+            <img src="Image/vk.jpg" />&nbsp; <a>Vkontakte</a><br />
+            </div>
+        </div>
+        <div id="SiteFoot3">
+&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Register" runat="server" Text="Регистрация в один клик!"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="UserEmail" runat="server" BackColor="#2A2A2A" BorderColor="#484848" BorderStyle="Solid" BorderWidth="1px" Font-Size="10px"  style="margin-left: 14px" ForeColor="#6D6D6D">E-mail</asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="UserPassword" runat="server" BackColor="#2A2A2A" BorderColor="#484848" BorderStyle="Solid" BorderWidth="1px" Font-Size="10px"  style="margin-left: 14px" ForeColor="#6D6D6D" >Password</asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="BtnRegister" runat="server" Text="Регистрация" />
+            <br />
+            
+        </div>
+
+        </div>
+    </div>
+
+    <div id="SiteFooterBottom"></div>
+</div>
 
 </form>
 </body>

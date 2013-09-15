@@ -14,26 +14,11 @@ body {
     padding: 0;
 }
 
-a {
-    color: #333;
-    outline: none;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-decoration: underline;
-}
 
-    a:link, a:visited,
-    a:active, a:hover {
-        color: #333;
-    }
 
-    a:hover {
-        background-color: #c7d1d6;
-    }
-
-header, footer, hgroup,
-nav, section {
-    display: block;
+a { 
+    text-decoration:none;
+    color: grey;
 }
 
 footer {
@@ -49,7 +34,7 @@ footer {
 h1, h2, h3,
 h4, h5, h6 {
     color: #000;
-    margin-bottom: 0;
+    margin: 10px;
     padding-bottom: 0;
 }
 
@@ -59,10 +44,14 @@ h1 {
 
 h2 {
     font-size: 1.75em;
+    
 }
 
 h3 {
     font-size: 1.2em;
+    color: rgb(119,119,119);
+    font-weight: 400;
+    margin: 20px;
 }
 
 h4 {
@@ -79,92 +68,167 @@ h5, h6 {
     }
 
 
-#SiteLogo { font-size:20px;
+
+
+
+
+#Logo { font-size:20px;
         font-weight:900;
         
 }
 
-#SiteNav {
-    float: left;
-    background-color: rgb(236,236,236);
-    margin-top: 5px;
-    width:98%;
-    height: 300px;
-}
-
-#SiteSubscribe {
-    float: left;
-    background-color: rgb(236,236,236);
-    margin-top: 5px;
-    width:98%;
-    height: 50px;
-}
-
-#SiteSubscribe, #SiteNav {
-    background-color: rgba(100, 100, 100, 0.5);
-                    
-}
-
-#SitePage {    
+#Page {    
     height: 500px;
     box-shadow: 0 0 5px black;
 }
 
-#SiteContent, #SiteMenu {
+#Content, #Menu, #Login {
     float:left;
     height: 100%;
 }
 
-#SiteHeader { 
-    background-color: rgb(70,70,70);
+#Header { 
+    background-color: rgb(60,60,60);
+
+
+    background: -o-linear-gradient( -45deg, grey 50%, black 95%);
+      background: -moz-linear-gradient( -45deg, grey 50%, rgb(60,60,60) 95%);
+      background: -webkit-linear-gradient( -45deg, grey 50%, black 95%);
+
     color: rgb(204,204,204);
-    height: 50px;
+    height: 35px;
 }
 
-#SiteMenu { 
+#Menu { 
     width:20%;
     min-width: 40px;
     background-color: rgb(223,223,223);
 }
 
+hr { 
+    background-color: white;
+    width: 333px;
+}
 
 
+#ViewSite { 
+    float: left;
+    background-color: white;
+    width:100%;
+    height: 40px;
+    vertical-align:central;
+}
 
+#SetGeneral, #SetSite{
+    float: left;
+    
+    margin-top: 5px;
+    width:100%;
+    height: 90px;
+}
 
+#LinkSite {
+    text-decoration:none;
+    color: #6b6b6b;
+    line-height: 40px;
+    font-weight:900;
+}
+#ViewLink {
+    margin:  0 2px;
+}
 
-#SiteContent { 
+#SetLinks { 
+    background-color: rgba(100, 100, 100, 0.5);
+          height:  10px;
+          border: 1px solid silver;
+          box-shadow: 0 0 5px black;
+          margin: 15px;
+          margin-top: 300px;
+          padding: 25px;
+                  border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#Content { 
     width:75%;
     min-width: 200px;
-    box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px black;
     
     }
 
-#SiteSection { 
+
+#Section { 
     margin: 30px;
     height:80%;
-}
-
-#Login { width: 14%;
-         
-}
-
-#LoginView1 { margin: 0 30px 0 30px;
-              color: red;
-}
-
-#Login {
-    width: 3%; 
-    height: 35px;
-    float: right;
-    background-color: #cecece;
-        -moz-border-radius: 35px;
+    background-color: rgb(245,245,245);
     -webkit-border-radius: 35px;
     -o-border-radius: 35px;
-        border-radius:  100px 0 0 100px;
-    margin-top:200px;
-    font-size: 8px;
-    border: groove 2px white;
-    color: white;
+        border-radius:  3px;
+        border: solid 1px rgb(223,223,223);
+        box-shadow: 0 0 5px rgb(230,230,230);
+
+}
+
+    #Section p {
+        margin: 15px;
+    }
+
+.LinkBtn {
+    
+    padding-top: 7px;
+    text-decoration: none;
+    background-color: rgba(20,20,20, 0.7);
+    /*
+    background: -o-linear-gradient( top, #555 50%, black 95%);
+    background: -moz-linear-gradient( bottom, rgb(110,110,110) 50%, rgb(130,130,130) 95%);
+    background: -webkit-linear-gradient( top, #555 50%, black 95%); 
+
+
+    border-top:  groove;
+    border-color: white;
+    border-width:2px;*/
+          -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+    
+    height:23px;
+    
+    
+}
+
+.LinkBtn:hover {
+      -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+   /* background-color: rgb(70,70,70);
+    color: rgb(245,245,245);
+*/
+
+    background-color: black;
+     opacity:0.3;
+    
+}
+
+
+#LinkButton1, #LinkButton2, #LinkButton3, #LinkButton4, #LinkButton5, #LinkButton6 {
+         
+    
+    }
+
+#LinkButton3, #LinkButton6 {
+    border-bottom:  groove;
+    border-color: white;
+    border-width:2px;
+    
+}
+
+#LinkButton3:hover, #LinkButton6:hover {
+    border-bottom:  ridge;
+    border-color: white;
+    border-width:2px;
+    
 }
 
 
@@ -191,7 +255,7 @@ h5, h6 {
 /* search
 --------------------------------------------------------- */
 
-#SiteSearch, #SiteInpSearch {
+#search, #inpSearch {
     
     font-size: .85em;
     text-align: right;
@@ -202,6 +266,449 @@ h5, h6 {
     margin: 3px;
 }
 
-#SiteInpSearch {
+#inpSearch {
 }
 
+
+
+
+
+
+/*SITE
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-*/
+
+
+
+#SiteLogo { font-size:20px;
+        font-weight:900;
+        
+}
+
+
+
+
+
+#SiteNav {
+    width:85%;
+    height: 300px;
+    
+}
+
+
+#SiteFollow {
+    width:85%;
+    
+    height: 50px;
+}
+
+#SiteNav, #SiteFollow {
+          border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    
+    margin: 10px;
+    margin-top:0;
+    border: 1px solid silver;
+          box-shadow: 0 0 5px black;
+          background-color: rgba(100, 100, 100, 0.5);
+    float: left;
+}
+
+#SitePage {    
+    height: 600px;
+    min-width: 700px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(210,209,208);
+}
+
+#SiteContent, #SiteMenu {
+    float:left;
+    height: 95%;
+}
+
+#SiteContent { background-color: rgb(224,224,224);
+                         border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#SiteHeader {
+    height: 80px;
+    min-width: 600px;
+}
+
+#SiteLogo {    height: 49px;
+               background-color: rgb(35,35,35);
+}
+
+#SiteNavigation {    height: 29px;
+    margin-top: 0px;
+    background-color: rgb(51,51,51);
+    border-top:solid 1px rgb(56,56,56);
+    color: rgb(197,197,197);
+}
+
+#SiteMenu { 
+    width:20%;
+    min-width: 40px;
+    
+}
+
+#SiteSideBar {
+    height: 40px;
+    width:20%;
+    background-color: red;
+}
+
+#SiteFooter {
+    height: 300px;
+    width: 100%;
+    min-width: 800px;
+
+}
+
+#SiteFooterTop {
+    width: 100%;
+    height:70%;
+    background-color: rgb(51,51,51);
+}
+
+#SiteFooterBottom {
+    width: 100%;
+    height:25%;
+    background-color: rgb(35,35,35);
+    border-top: solid 1px rgb(68,68,68);
+}
+
+
+
+#SiteContent { 
+    width:65%;
+    min-width: 200px;
+    box-shadow: 0 0 5px grey;
+    border: 1px solid silver;
+    }
+
+#SiteSection { 
+    margin: 30px;
+    height:80%;
+    
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+        border-radius:  3px;
+        border: solid 1px rgb(223,223,223);
+}
+
+#Login { width: 14%;
+         
+}
+
+#LoginView1 { margin: 0 30px 0 30px;
+              color: red;
+}
+
+#Login1 {
+     
+    float: right;
+    background-color: #cecece;
+        -moz-border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -o-border-radius: 35px;
+        border-radius:  100px 0 0 100px;
+    margin-top:100px;
+    
+    border: groove 2px white;
+    margin-left: 3px;
+}
+
+
+
+     /* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+    width: 90px;
+}
+
+.site-title a, .site-title a:hover, .site-title a:active {
+    background: none;
+    color: #c8c8c8;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+/* search
+--------------------------------------------------------- */
+
+#SiteSearch{
+    
+    font-size: .55em;
+    text-align: right;
+    width: 100px;
+    height: 50%;
+    color: grey;
+    margin: 10px  10px  10px 2px;
+    border:none;
+}
+
+#SiteSearch, #BtnSearch  {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+        border-radius:  3px;
+        float: right;
+}
+
+#BtnSearch {
+        height:55%;
+            background-image: url(Image/Search.jpg);
+    border:none;
+        margin: 10px 2px 10px  10px;
+}
+
+
+#SiteNavigation ul { float:left;
+    width: 100%;
+    height:86%;
+    margin-top: 0px;
+    
+}
+
+      
+#SiteNavigation ul li { display:inline;
+                        margin: 0 auto ;
+               text-align: center;
+
+        }
+
+           
+#SiteNavigation ul li a { 
+                          height:90%;
+                          padding-top:4px;
+                          width: 10%;
+                          float:left;
+                          border: 1px  solid rgb(51,51,51);
+                          
+                          color: rgb(197,197,197);
+                          text-align:center;
+                          font-size: .85em;
+
+
+            }
+            
+#SiteNavigation ul li a:hover { 
+                background-color: rgb(196,59,24);
+                border: 1px  solid rgb(196,59,24);
+                color: black;
+                  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+                                
+                                
+            }
+
+            
+#SiteNavigation ul li a:active { background-color: white;
+                border: 1px  solid silver;
+                color: black;
+                opacity:0.3;
+            }
+
+
+
+#SiteNav ul { padding:0;
+              margin:0;
+              margin-top: 10%;
+}
+
+#SiteNav ul li {list-style:none;
+                padding-left: 10px;
+                height:30px;
+                padding-top:6px;
+                margin: 0 auto;
+                border-bottom: 1px   double silver;
+                    
+                width:70%;
+
+}
+
+#SiteNav ul li a { color: #333;
+                   
+                  
+                   
+}
+
+#SiteNav ul li:hover {                                    -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+  background-color: rgba(100,100,100, 0.5)
+}
+
+
+
+
+
+
+
+
+
+#SiteFoot1   ul { float:left;
+    width: 69%;
+    margin-top:5px;
+    margin-left: 54px;
+}
+
+      
+#SiteFoot1    ul li { 
+               text-align: left;
+               list-style:none;
+               height:20px;
+               padding-top:5px;
+        }
+
+           
+#SiteFoot1    ul li a { 
+                          color: rgb(197,197,197);
+                          font-size: .85em;
+            }
+            
+#SiteFoot1    ul li a:hover { 
+                background-color: rgb(196,59,24);
+                border: 1px  solid rgb(196,59,24);
+                color: black;
+                  -webkit-transition: background .4s;
+  -moz-transition: background .4s;
+  transition: background .4s;
+                                
+                                
+            }
+
+            
+#SiteFoot1    ul li a:active { background-color: white;
+                border: 1px  solid silver;
+                color: black;
+                opacity:0.3;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.BtnSearch {
+
+       
+}
+
+#SiteFoot {
+    margin: 0 auto;
+    height:100%;
+    width:96%;
+    max-width: 800px;
+    min-width: 600px;
+}
+
+#SiteFoot1, #SiteFoot2, #SiteFoot3 {
+    width:33%;
+    height:80%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+    
+    
+    float:left;
+    color: rgb(143,136,124);
+
+}
+#SiteFoot2, #SiteFoot3 {
+    border-left:  inset 1px grey;
+}
+
+#SiteFoot2 div {
+    padding: 0 0 0 30px;
+}
+
+.SiteFoot1 {
+    float:left;
+    height:100%;
+    width:40%;
+}
+
+#UserEmail,#UserPassword  {
+    height:20px;
+    width:100px;
+    padding:2px 0  0 5px;
+    
+}
+
+#UserPassword {
+
+}
+
+    #UserEmail:active {
+        border-color: rgb(196,59,24);
+    }
+
+
+
+
+
+#BtnRegister, #BtnLogin { 
+    background: -o-linear-gradient( top, grey 50%, black 95%);
+      background: -moz-linear-gradient( top, rgb(206,66,26) 50%, rgb(189,53,22) 95%);
+      background: -webkit-linear-gradient( top, grey 50%, black 95%);
+      border:solid 1px rgb(201,61,30);
+      border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    height:25px;
+    width:107px;
+    margin-left: 14px;
+    color: white;
+    font-size: 10px;
+    text-align:left;
+}
+
+#BtnUp {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: rgba(55,55,55,0.8);
+    margin-top: -22px;
+}
+
+#UserLogin {
+    float:right;
+    width: 100px;
+    height: 200px;
+    margin-top: 50px;
+    text-align:center;
+    border: solid 1px silver;
+    background-color: rgba(40,40,40, 0.5);
+}
+
+#BtnLogin,  #UserName,  #Password {
+    width:80px;
+    font-size: 10px;
+    color: rgb(143,136,124);
+}
+
+#BtnLogin {
+    color: white;
+    margin:0;
+}
