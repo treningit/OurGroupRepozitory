@@ -7,7 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
 
-    <link  type="text/css" href="Site.css" rel="stylesheet"/>
+    <link  type="text/css" href="NewCss.css" rel="stylesheet"/>
+    
+    <style type="text/css">
+        .SiteFoot1 {
+            width: 86px;
+        }
+    </style>
     
 </head>
 
@@ -19,16 +25,30 @@
 
 
    <div id="SiteHeader">
+       <div id="SiteLogo">
+           <%--<input type="search" value="Search..." id="SiteSearch"/>--%>
+           <asp:TextBox ID="SiteSearch" runat="server" ></asp:TextBox>&nbsp;
+           <asp:Button ID="BtnSearch" runat="server" CssClass="BtnSearch" Height="27px" Width="27px" />
+       </div>
+       <div id="SiteNavigation">
+           <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Map</a></li>
+        </ul>
+           
+       </div>
    </div>
    <div id="SitePage">
        <div id="SiteMenu" >
             
 
-           <div id="SiteNav">
-               <br />
-               <br />
+           <div id="SiteNav" runat="server">
+               
+              
            </div>            
-           <div id="SiteSubscribe">
+           <div id="SiteFollow">
                <br />
                <br />
            </div> 
@@ -41,37 +61,91 @@
 
             <div id="SiteSection">
                 <p>Раздел</p>
-                
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                <br />
-                <br />
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <br />
-                <br />
-&nbsp;&nbsp;
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-                
-                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" SelectCommand="SELECT [UserName], [UserPassword] FROM [User] WHERE (([UserName] = @UserName) AND ([UserPassword] = @UserPassword))">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="TextBox1" Name="UserName" PropertyName="Text" Type="String" />
-                        <asp:ControlParameter ControlID="TextBox2" Name="UserPassword" PropertyName="Text" Type="String" />
-                    </SelectParameters>
-                </asp:SqlDataSource>
+                <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2">
+                    <ItemTemplate>
+                        CompanyInfo:
+                        <asp:Label ID="CompanyInfoLabel" runat="server" Text='<%# Eval("CompanyInfo") %>' />
+                        <br />
+                        Phone:
+                        <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
+<br />
+                        Address:
+                        <asp:Label ID="AddressLabel" runat="server" Text='<%# Eval("Address") %>' />
+                        <br />
+                        <br />
+                    </ItemTemplate>
+                </asp:DataList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT [CompanyInfo], [Phone], [Address] FROM [Info]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT [CompanyInfo] FROM [Info]"></asp:SqlDataSource>
             </div>
-            
+
+
 
         </div>
-       <span id="Login" >&nbsp; Вход
-       </span>
-      
-       
-      
+       <%--<asp:Button ID="Login" runat="server" Height="37px" Text="Вход" Width="25px" />--%>
+       <div id="UserLogin">
+           <br />
+           <asp:Label ID="Enter" runat="server" Text="Вход"></asp:Label>
+           <br />
+           <br />
+           <asp:TextBox ID="UserName" runat="server">Логин</asp:TextBox>
+           <br />
+           <br />
+           <asp:TextBox ID="Password" runat="server" >Пароль</asp:TextBox>
+           <br />
+           <br />
+           <asp:Button ID="BtnLogin" runat="server" Text="Button" />
+       </div>
     </div>
 
+<div id="SiteFooter">
+    <div id="SiteFooterTop">
+        <div id="SiteFoot">
+        <div id="SiteFoot1">
+            <div class="SiteFoot1">
 
+                <asp:Button ID="BtnUp" runat="server" Height="208px" Text="Наверх" Width="82px" ForeColor="#444444" />
+
+            </div>
+            <div class="SiteFoot1">
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Map</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="SiteFoot2">
+            <div>
+                <p>Ожидайте наш магазин <br />в социальных сетях:</p>
+
+            <img src="Image/tw.jpg"/>&nbsp; <a>Twitter</a><br />
+            <img src="Image/fb.jpg" />&nbsp; <a>Facebook</a><br />
+            <img src="Image/vk.jpg" />&nbsp; <a>Vkontakte</a><br />
+            </div>
+        </div>
+        <div id="SiteFoot3">
+&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Register" runat="server" Text="Регистрация в один клик!"></asp:Label>
+            <br />
+            <br />
+            <asp:TextBox ID="UserEmail" runat="server" BackColor="#2A2A2A" BorderColor="#484848" BorderStyle="Solid" BorderWidth="1px" Font-Size="10px"  style="margin-left: 14px" ForeColor="#6D6D6D">E-mail</asp:TextBox>
+            <br />
+            <br />
+            <asp:TextBox ID="UserPassword" runat="server" BackColor="#2A2A2A" BorderColor="#484848" BorderStyle="Solid" BorderWidth="1px" Font-Size="10px"  style="margin-left: 14px" ForeColor="#6D6D6D" >Password</asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="BtnRegister" runat="server" Text="Регистрация" />
+            <br />
+            
+        </div>
+
+        </div>
+    </div>
+
+    <div id="SiteFooterBottom"></div>
+</div>
 
 </form>
 </body>

@@ -12,23 +12,28 @@ namespace PadesEmpty
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            string myConnection;
-            SqlConnection myCon;
-            SqlCommand myCom;
-            myConnection = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\HP\Desktop\GiT\OurGroupRepozitory\BD\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30";
-            myCon = new SqlConnection(myConnection);
-            myCom =
-                new SqlCommand(
-                    "SELECT UserName,UserPassword FROM User WHERE UserName='Pavel' AND UserPassword='Yfkbdfqrj'", myCon);
+            String strCon = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Cryo\Desktop\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30";
+            SqlConnection myCon = new SqlConnection(strCon);
+            SqlCommand myCom = new SqlCommand("Select CategoryName From Category", myCon);
             myCom.Connection.Open();
-            myCom.ExecuteReader();
-            //Label1.Text = reader.ToString();
+
+            SqlDataReader reader = myCom.ExecuteReader();
+            while (reader.Read())
+            {
+                var link = new LinkButton();
+                link.ID = reader[0].ToString();
+                link.Text = reader[0].ToString();
+                link.Font.Size = FontUnit.Larger;
+                link.Click += new EventHandler(link_Click);
+                SiteNav.Controls.Add(link);
+                SiteNav.Controls.Add(new LiteralControl("<br/>"));
+            }
             myCon.Close();
+        }
+        void link_Click(object sender, EventArgs e)
+        {
+            var link = (LinkButton)sender;
+
         }
     }
 }

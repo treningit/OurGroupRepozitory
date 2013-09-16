@@ -59,10 +59,18 @@
   <ItemGroup>
     <Content Include="Category.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="Image\fb.jpg" />
+    <Content Include="Image\fons.jpg" />
+    <Content Include="Image\Search.jpg" />
+    <Content Include="Image\Search1.jpg" />
+    <Content Include="Image\tw.jpg" />
+    <Content Include="Image\vk.jpg" />
     <Content Include="Inform.aspx" />
+    <Content Include="NewCss.css" />
     <Content Include="Products.aspx" />
     <Content Include="Settings.aspx" />
     <Content Include="Site.aspx" />
+    <Content Include="SiteEnter.aspx" />
     <Content Include="Site.css" />
     <Content Include="Style.css" />
     <Content Include="Users.aspx" />
@@ -113,6 +121,13 @@
     </Compile>
     <Compile Include="Site.aspx.designer.cs">
       <DependentUpon>Site.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteEnter.aspx.cs">
+      <DependentUpon>SiteEnter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteEnter.aspx.designer.cs">
+      <DependentUpon>SiteEnter.aspx</DependentUpon>
     </Compile>
     <Compile Include="Users.aspx.cs">
       <DependentUpon>Users.aspx</DependentUpon>

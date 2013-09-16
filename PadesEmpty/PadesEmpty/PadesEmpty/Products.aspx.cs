@@ -27,15 +27,11 @@ namespace PadesEmpty
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            string myConnection;
-            SqlConnection myCon;
-            SqlCommand myCom;
-            myConnection = SqlDataSource2.ConnectionString;
-            myCon = new SqlConnection(myConnection);
-            myCom =
-                new SqlCommand(
-                    "INSERT INTO Product (ProductName,Discription,FullDiscription) VALUES ('" + TextBox1.Text +
-                    "','" + TextBox2.Text + "','" + TextBox3.Text + "')", myCon);
+            string myConnection = SqlDataSource2.ConnectionString;
+            SqlConnection myCon = new SqlConnection(myConnection);
+            SqlCommand myCom = new SqlCommand(
+                "INSERT INTO Product (ProductName,Discription,FullDiscription) VALUES ('" + TextBox1.Text +
+                "','" + TextBox2.Text + "','" + TextBox3.Text + "')", myCon);
             myCom.Connection.Open();
             myCom.ExecuteNonQuery();
             myCon.Close();
