@@ -12,11 +12,12 @@ namespace PadesEmpty
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
             String strCon = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Cryo\Desktop\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30";
             SqlConnection myCon = new SqlConnection(strCon);
             SqlCommand myCom = new SqlCommand("Select CategoryName From Category", myCon);
             myCom.Connection.Open();
-
+           
             SqlDataReader reader = myCom.ExecuteReader();
             while (reader.Read())
             {
@@ -33,7 +34,11 @@ namespace PadesEmpty
         void link_Click(object sender, EventArgs e)
         {
             var link = (LinkButton)sender;
-
+           // DataList1.Visible = false;
+            //Label1.Visible = false;
+            Label1.Text = link.Text;
         }
+
+        
     }
 }

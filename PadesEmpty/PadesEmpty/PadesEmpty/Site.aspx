@@ -61,6 +61,7 @@
 
             <div id="SiteSection">
                 <p>Раздел</p>
+                <asp:Label ID="Label1" runat="server" Text="APP"></asp:Label>
                 <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2">
                     <ItemTemplate>
                         CompanyInfo:
@@ -76,7 +77,7 @@
                     </ItemTemplate>
                 </asp:DataList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT [CompanyInfo], [Phone], [Address] FROM [Info]"></asp:SqlDataSource>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT [CompanyInfo] FROM [Info]"></asp:SqlDataSource>
+                <asp:DataList ID="DataList2" runat="server"></asp:DataList>
             </div>
 
 
@@ -96,6 +97,7 @@
            <br />
            <asp:Button ID="BtnLogin" runat="server" Text="Button" />
        </div>
+       <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT Product.ProductName, Product.Discription FROM Category INNER JOIN ProductCategory ON Category.IDCategory = ProductCategory.IDCategory INNER JOIN Product ON ProductCategory.IDProduct = Product.IDProduct WHERE (Category.CategoryName = @Label1.Text)"></asp:SqlDataSource>
     </div>
 
 <div id="SiteFooter">
