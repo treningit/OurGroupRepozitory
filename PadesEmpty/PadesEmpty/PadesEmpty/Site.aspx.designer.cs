@@ -85,13 +85,13 @@ namespace PadesEmpty {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
         
         /// <summary>
-        /// DataList2 элемент управления.
+        /// GridView2 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList2;
+        protected global::System.Web.UI.WebControls.GridView GridView2;
         
         /// <summary>
         /// Enter элемент управления.
@@ -130,13 +130,13 @@ namespace PadesEmpty {
         protected global::System.Web.UI.WebControls.Button BtnLogin;
         
         /// <summary>
-        /// SqlDataSource3 элемент управления.
+        /// SqlDataSource1 элемент управления.
         /// </summary>
         /// <remarks>
         /// Автоматически создаваемое поле.
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
         /// BtnUp элемент управления.

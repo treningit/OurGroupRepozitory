@@ -91,7 +91,7 @@
 
                 <br />
                 <br />
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteCatalogConnectionString %>" DeleteCommand="DELETE FROM [Comments] WHERE [IDProduct] = @IDProduct
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Users\Cryo\Desktop\SiteCatalog.mdf;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [Comments] WHERE [IDProduct] = @IDProduct
 DELETE FROM [ProductCategory] WHERE [IDProduct] = @IDProduct
 DELETE FROM [Product] WHERE [IDProduct] = @IDProduct
 " InsertCommand="INSERT INTO [Product] ([IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto]) VALUES (@IDProduct, @ProductName, @Discription, @FullDiscription, @IDPhoto)" SelectCommand="SELECT [IDProduct], [ProductName], [Discription], [FullDiscription], [IDPhoto] FROM [Product]" UpdateCommand="UPDATE [Product] SET [ProductName] = @ProductName, [Discription] = @Discription, [FullDiscription] = @FullDiscription, [IDPhoto] = @IDPhoto WHERE [IDProduct] = @IDProduct" ProviderName="<%$ ConnectionStrings:SiteCatalogConnectionString.ProviderName %>">

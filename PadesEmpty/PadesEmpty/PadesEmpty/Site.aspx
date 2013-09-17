@@ -61,7 +61,7 @@
 
             <div id="SiteSection">
                 <p>Раздел</p>
-                <asp:Label ID="Label1" runat="server" Text="APP"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource2">
                     <ItemTemplate>
                         CompanyInfo:
@@ -77,10 +77,16 @@
                     </ItemTemplate>
                 </asp:DataList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT [CompanyInfo], [Phone], [Address] FROM [Info]"></asp:SqlDataSource>
-                <asp:DataList ID="DataList2" runat="server"></asp:DataList>
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="IDCategory,IDProduct" DataSourceID="SqlDataSource1" EmptyDataText="Нет записей для отображения.">
+               <Columns>
+                   <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
+                   <asp:BoundField DataField="Discription" HeaderText="Discription" SortExpression="Discription" />
+                   <asp:BoundField DataField="CategoryName" HeaderText="CategoryName" SortExpression="CategoryName" />
+               </Columns>
+           </asp:GridView>
             </div>
 
-
+            
 
         </div>
        <%--<asp:Button ID="Login" runat="server" Height="37px" Text="Вход" Width="25px" />--%>
@@ -95,9 +101,29 @@
            <asp:TextBox ID="Password" runat="server" >Пароль</asp:TextBox>
            <br />
            <br />
-           <asp:Button ID="BtnLogin" runat="server" Text="Button" />
+           <asp:Button ID="BtnLogin" runat="server" Text="Button" OnClick="UserEnter" />
        </div>
-       <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" SelectCommand="SELECT Product.ProductName, Product.Discription FROM Category INNER JOIN ProductCategory ON Category.IDCategory = ProductCategory.IDCategory INNER JOIN Product ON ProductCategory.IDProduct = Product.IDProduct WHERE (Category.CategoryName = @Label1.Text)"></asp:SqlDataSource>
+       <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SiteDimaVersion %>" DeleteCommand="DELETE FROM [Product] WHERE [IDProduct] = @IDProduct" InsertCommand="INSERT INTO [Product] ([ProductName], [Discription], [FullDiscription], [IDPhoto]) VALUES (@ProductName, @Discription, @FullDiscription, @IDPhoto)" SelectCommand="SELECT Product.ProductName, Product.Discription, Category.CategoryName, Category.IDCategory, Product.IDProduct FROM Category INNER JOIN ProductCategory ON Category.IDCategory = ProductCategory.IDCategory INNER JOIN Product ON ProductCategory.IDProduct = Product.IDProduct WHERE (Category.CategoryName = @CategoryName)" UpdateCommand="UPDATE [Product] SET [ProductName] = @ProductName, [Discription] = @Discription, [FullDiscription] = @FullDiscription, [IDPhoto] = @IDPhoto WHERE [IDProduct] = @IDProduct">
+           <DeleteParameters>
+               <asp:Parameter Name="IDProduct" Type="Int32" />
+           </DeleteParameters>
+           <InsertParameters>
+               <asp:Parameter Name="ProductName" Type="String" />
+               <asp:Parameter Name="Discription" Type="String" />
+               <asp:Parameter Name="FullDiscription" Type="String" />
+               <asp:Parameter Name="IDPhoto" Type="Int32" />
+           </InsertParameters>
+           <SelectParameters>
+               <asp:ControlParameter ControlID="Label1" Name="CategoryName" PropertyName="Text" />
+           </SelectParameters>
+           <UpdateParameters>
+               <asp:Parameter Name="ProductName" Type="String" />
+               <asp:Parameter Name="Discription" Type="String" />
+               <asp:Parameter Name="FullDiscription" Type="String" />
+               <asp:Parameter Name="IDPhoto" Type="Int32" />
+               <asp:Parameter Name="IDProduct" Type="Int32" />
+           </UpdateParameters>
+       </asp:SqlDataSource>
     </div>
 
 <div id="SiteFooter">
@@ -138,7 +164,7 @@
             <asp:TextBox ID="UserPassword" runat="server" BackColor="#2A2A2A" BorderColor="#484848" BorderStyle="Solid" BorderWidth="1px" Font-Size="10px"  style="margin-left: 14px" ForeColor="#6D6D6D" >Password</asp:TextBox>
             <br />
             <br />
-            <asp:Button ID="BtnRegister" runat="server" Text="Регистрация" />
+            <asp:Button ID="BtnRegister" runat="server" Text="Регистрация" OnClick="UserRegister" />
             <br />
             
         </div>
