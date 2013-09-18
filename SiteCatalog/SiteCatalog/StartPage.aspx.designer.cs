@@ -22,6 +22,9 @@ namespace SiteCatalog {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+<<<<<<< HEAD
+        /// TextBox1 элемент управления.
+=======
         /// Panel1 control.
         /// </summary>
         /// <remarks>
@@ -32,6 +35,7 @@ namespace SiteCatalog {
         
         /// <summary>
         /// TextBox1 control.
+>>>>>>> d0b0040c24ecb5cef4d452c41ef9921ae8e73ee6
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -85,29 +89,53 @@ namespace SiteCatalog {
         protected global::System.Web.UI.WebControls.ListBox ListBox1;
         
         /// <summary>
+<<<<<<< HEAD
+        /// SqlDataSource3 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+=======
         /// SqlDataSource3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
+>>>>>>> d0b0040c24ecb5cef4d452c41ef9921ae8e73ee6
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
         
         /// <summary>
+<<<<<<< HEAD
+        /// ListView1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+=======
         /// ListView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
+>>>>>>> d0b0040c24ecb5cef4d452c41ef9921ae8e73ee6
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView ListView1;
         
         /// <summary>
+<<<<<<< HEAD
+        /// SqlDataSource1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+=======
         /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
+>>>>>>> d0b0040c24ecb5cef4d452c41ef9921ae8e73ee6
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }

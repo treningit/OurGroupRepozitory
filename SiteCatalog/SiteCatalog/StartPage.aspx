@@ -10,10 +10,9 @@
     <form id="form1" runat="server">
     <div>
     
-        <asp:Panel ID="Panel1" runat="server">
             <asp:TextBox ID="TextBox1" runat="server" Width="327px"></asp:TextBox>
             <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Button" />
-        </asp:Panel>
+ 
     
         <asp:Button ID="Button1" runat="server" Text="Button" />
         <asp:Button ID="Button2" runat="server" Text="Button" />

@@ -1,0 +1,224 @@
+﻿html {
+    background-color: #e2e2e2;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    
+    color: #333;
+    font-size: .85em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
+
+    a:link, a:visited,
+    a:active, a:hover {
+        color: #333;
+    }
+
+    a:hover {
+        background-color: #c7d1d6;
+    }
+
+header, footer, hgroup,
+nav, section {
+    display: block;
+}
+
+footer {
+    clear: both;
+    background-color: #e2e2e2;
+    font-size: .8em;
+    height: 100px;
+
+
+}
+
+
+h1, h2, h3,
+h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+    h5 a:link, h5 a:visited, h5 a:active {
+        padding: 0;
+        text-decoration: none;
+    }
+
+#Logo { font-size:20px;
+        font-weight:900;
+        
+}
+
+#Page {    
+    height: 500px;
+    box-shadow: 0 0 5px black;
+}
+
+#Content, #Menu, #Login {
+    float:left;
+    height: 100%;
+}
+
+#Header { 
+    background-color: rgb(70,70,70);
+    color: rgb(204,204,204);
+    height: 50px;
+}
+
+#Menu { 
+    width:20%;
+    min-width: 40px;
+    background-color: rgb(223,223,223);
+}
+
+hr { 
+    background-color: white;
+}
+
+
+#ViewSite { 
+    float: left;
+    background-color: white;
+    width:100%;
+    height: 40px;
+    vertical-align:central;
+}
+
+#SetGeneral, #SetSite{
+    float: left;
+    background-color: rgb(236,236,236);
+    margin-top: 5px;
+    width:100%;
+    height: 99px;
+}
+
+#LinkSite {
+    text-decoration:none;
+    color: #6b6b6b;
+    line-height: 40px;
+    font-weight:900;
+}
+#ViewLink {
+margin:  0 2px;
+}
+
+
+#Content { 
+    width:75%;
+    min-width: 200px;
+    box-shadow: 0 0 5px grey;
+    }
+
+#Section { 
+    margin: 30px;
+    height:80%;
+    width: 722px;
+}
+
+
+
+
+.LinkBtn {
+    
+    padding-top: 7px;
+    text-decoration: none;
+    background-color: #adadad;
+    border-top:  groove;
+    border-color: white;
+    border-width:2px;
+    height:23px;
+    
+    
+}
+
+.LinkBtn:hover {
+
+    background-color: rgb(70,70,70);
+   
+    
+}
+
+
+#LinkButton1, #LinkButton2, #LinkButton3, #LinkButton4, #LinkButton5, #LinkButton6 {
+         
+    
+    }
+
+#LinkButton3, #LinkButton6 {
+    border-bottom:  groove;
+    border-color: white;
+    border-width:2px;
+    
+}
+
+
+     /* site title
+----------------------------------------------------------*/
+.site-title {
+    color: #c8c8c8;
+    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
+    font-size: 2.3em;
+    margin: 0;
+    width: 90px;
+}
+
+.site-title a, .site-title a:hover, .site-title a:active {
+    background: none;
+    color: #c8c8c8;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+/* search
+--------------------------------------------------------- */
+
+#search, #inpSearch {
+    
+    font-size: .85em;
+    text-align: right;
+    width: 100px;
+    height: 55%;
+    float: right;
+    color: grey;
+    margin: 3px;
+}
+
+#inpSearch {
+}
+
